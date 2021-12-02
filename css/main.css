@@ -113,12 +113,12 @@ header {
 
 /* HomePage Banner */
 .front-banner {
-  height: 100vh;
-  width: 100vw;
   background-image: url("../img/homepage-banner.jpg");
   background-position: center;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: color;
+  height: 100vh;
+  width: 100vw;
 }
 
 .front-banner .container {
@@ -168,12 +168,27 @@ header {
 }
 
 .front-page_footer {
+  font-family: "Google Sans Medium";
+  font-weight: lighter;
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto 30px auto;
 }
 
 .footer-item {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.7);
   display: flex;
+  margin-left: 100px;
+  align-items: center;
+  cursor: default;
+}
+
+.footer-item:hover {
+  color: white;
+}
+
+.footer-item:first-child {
+  margin-left: 0;
 }
 
 .front-banner .nav-buttons-wrap {
@@ -197,6 +212,10 @@ header {
   background-color: orangered;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+}
+
+.material-icons.footer-icon {
+  margin-right: 10px;
 }
 
 .front-banner .nav-buttons-wrap .nav-button:last-child {
