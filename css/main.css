@@ -8,6 +8,10 @@
   color: rgb(150, 150, 150);
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration: none;
+}
+
 .row {
   display: flex;
   margin: auto;
@@ -21,6 +25,10 @@
 
 .material-icons.md-light {
   color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
 /* Header Styles */
@@ -104,13 +112,96 @@ header {
 }
 
 /* HomePage Banner */
-.front_banner {
+.front-banner {
   height: 100vh;
   width: 100vw;
   background-image: url("../img/homepage-banner.jpg");
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: color;
+}
+
+.front-banner .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.front-page_central-intro {
+  font-family: "Google Sans";
+  height: auto;
+  color: white;
+  text-align: center;
+  margin: auto 0 auto 0;
+}
+
+.front-banner .input-bar-container {
+  background: white;
+  border-radius: 10px;
+  width: 900px;
+  margin: auto;
+}
+
+.front-banner .input-bar {
+  background: transparent;
+  outline-width: 0;
+  border: none;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  width: 900px;
+}
+
+.front-banner .search-button {
+  background: transparent;
+  border: none;
+  padding: 15px;
+}
+
+.intro-main-text {
+  font-size: 4em;
+  line-height: 1.2;
+}
+
+.intro-main-text.animate {
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.front-page_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  display: flex;
+}
+
+.front-banner .nav-buttons-wrap {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  margin: 30px auto 0 auto;
+}
+
+.front-banner .nav-buttons-wrap .nav-button {
+  font-size: 0.8em;
+  border: none;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+}
+
+.front-banner .nav-buttons-wrap .nav-button:first-child {
+  background-color: orangered;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.front-banner .nav-buttons-wrap .nav-button:last-child {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
