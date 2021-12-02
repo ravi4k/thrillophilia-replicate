@@ -1,3 +1,118 @@
+/* Global Styles */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+::placeholder {
+  color: rgb(150, 150, 150);
+}
+
+.row {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.material-icons {
+  align-items: center;
+  display: flex;
+}
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.top_bar {
+  height: fit-content;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.transparent_bar {
+  background-color: transparent;
+}
+
+.white_bar {
+  background-color: white;
+}
+
+.top-bar_right {
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.top-bar_left {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.thrillo-logo{
+  height: 35px;
+  width: 175px;
+}
+
+.thrillo-logo.white {
+  background-image: url("../img/logos/thrillo-logo-white.png");
+}
+
+.thrillo-logo.colored {
+  background-image: url("../img/logos/thrillo-logo-colored.png");
+}
+
+.search-input {
+  color: white;
+  font-family: "Google Sans", sans-serif;
+  font-size: small;
+  background: transparent;
+  border: none;
+  outline-width: 0;
+  padding: 15px 15px;
+}
+
+.new-badge {
+  position: relative;
+  top: -10px;
+  margin: auto;
+  color: white;
+  font-size: 0.6em;
+  padding: 2px 5px;
+  background-color: orangered;
+}
+
+.header-text {
+  font-family: "Google Sans", sans-serif;
+  font-size: small;
+  color: white;
+  margin-left: 15px;
+}
+
+/* HomePage Banner */
+.front_banner {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/homepage-banner.jpg");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
