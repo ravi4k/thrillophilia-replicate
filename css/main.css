@@ -135,14 +135,14 @@ header {
   margin: auto 0 auto 0;
 }
 
-.front-banner .input-bar-container {
+.input-bar-container {
   background: white;
   border-radius: 10px;
   width: 900px;
   margin: auto;
 }
 
-.front-banner .input-bar {
+.input-bar {
   background: transparent;
   outline-width: 0;
   border: none;
@@ -151,20 +151,56 @@ header {
   width: 900px;
 }
 
-.front-banner .search-button {
+.material-icons.search-button {
   background: transparent;
   border: none;
   padding: 15px;
+  cursor: pointer;
 }
 
 .intro-main-text {
-  font-size: 4em;
+  font-size: 4rem;
   line-height: 1.2;
 }
 
+@keyframes translateTextUp {
+  0% {
+    transform: translateY(0rem);
+  }
+  33% {
+    transform: translateY(-8rem);
+  }
+  66% {
+    transform: translateY(-16rem);
+  }
+  100% {
+    transform: translateY(-24rem);
+  }
+}
+
+.animate-box {
+  height: 8rem;
+  overflow: hidden;
+}
+
 .intro-main-text.animate {
-  font-size: 6em;
+  top: auto;
+  font-size: 6rem;
+  height: 8rem;
   font-weight: bold;
+  position: relative;
+
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-timing-function: cubic-bezier(0, 1, 1, 1);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-name: translateTextUp;
+  transition: 0.2s all;
+}
+
+.animate-item {
+  height: 8rem;
 }
 
 .front-page_footer {
@@ -191,14 +227,14 @@ header {
   margin-left: 0;
 }
 
-.front-banner .nav-buttons-wrap {
+.nav-buttons-wrap {
   display: flex;
   width: fit-content;
   flex-direction: row;
   margin: 30px auto 0 auto;
 }
 
-.front-banner .nav-buttons-wrap .nav-button {
+.nav-button {
   font-size: 0.8em;
   border: none;
   align-items: center;
@@ -206,9 +242,15 @@ header {
   color: white;
   background-color: rgb(50, 50, 50);
   display: flex;
+  border-right: 1px solid white;
 }
 
-.front-banner .nav-buttons-wrap .nav-button:first-child {
+.nav-button:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.nav-button:first-child {
   background-color: orangered;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -218,9 +260,10 @@ header {
   margin-right: 10px;
 }
 
-.front-banner .nav-buttons-wrap .nav-button:last-child {
+.nav-button:last-child {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
+  border-right: none;
 }
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
