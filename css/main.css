@@ -1,4 +1,9 @@
 /* Global Styles */
+html, body {
+  overflow-x: hidden;
+  align-self: center;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -18,6 +23,13 @@ a, a:hover, a:active, a:visited, a:focus {
   align-items: center;
 }
 
+.column {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
 .material-icons {
   align-items: center;
   display: flex;
@@ -29,6 +41,10 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .material-icons.md-48 {
   font-size: 48px;
+}
+
+.section-divider {
+  margin-top: 80px;
 }
 
 /* Header Styles */
@@ -46,12 +62,12 @@ header {
   flex-direction: row;
 }
 
-.transparent_bar {
+.transparent-bar {
   background-color: transparent;
 }
 
-.white_bar {
-  background-color: white;
+.black-bar {
+  background-color: rgb(50, 50, 50);
 }
 
 .top-bar_right {
@@ -266,6 +282,155 @@ header {
   border-right: none;
 }
 
+.section-cards {
+  display: flex;
+  align-items: center;
+}
+
+.section-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section-head {
+  width: fit-content;
+  font-weight: bold;
+  color: black;
+  font-family: "Google Sans";
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-text-border {
+  border-top: 3px solid orangered;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.text-section-info {
+  color: gray;
+  margin-top: 10px;
+  font-family: "Google Sans";
+}
+
+.img-card {
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-card.large-card {
+  height: 550px;
+  width: 600px;
+}
+
+.holiday-package-text {
+  position: absolute;
+  margin-left: 50px;
+  font-size: 2rem;
+  font-family: "Google Sans";
+  font-weight: bold;
+  color: white;
+}
+
+.holiday-package-text .yellow-text {
+  color: #FDD835;
+  font-weight: 600;
+  font-size: 10rem;
+  align-items: center;
+  height: 10rem;
+}
+
+.yellow-text .signs-text {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.book-now-btn {
+  font-family: "Google Sans";
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  position: absolute;
+  color: black;
+  border: none;
+  background-color: #FDD835;
+  border-radius: 5px;
+  left: 500px;
+  top: 1880px;
+}
+
+.card-grid-large {
+  text-align: center;
+  text-align: center;
+  height: 255px;
+  width: 140px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.card-grid-small {
+  text-align: center;
+  height: 127px;
+  width: 140px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.card-grid-medium {
+  text-align: center;
+  height: 230px;
+  width: 140px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.card-grid-large .img-card, .card-grid-small .img-card, .card-grid-medium .img-card {
+  margin-right: 0;
+}
+
+.card-grid-small:last-child, .card-grid-large:last-child, .card-grid-medium:last-child {
+  margin-bottom: 0;
+}
+
+.view-all-btn {
+  background-color: orangered;
+  font-weight: bold;
+  align-self: center;
+  color: white;
+  height: 50px;
+  width: 140px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.card-grid-large .center-card-text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: -140px;
+}
+
+.card-grid-small .center-card-text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: -70px;
+}
+
+.card-grid-medium .center-card-text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: -130px;
+}
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -283,6 +448,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Google Sans";
 }
 
 /*
