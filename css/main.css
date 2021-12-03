@@ -52,6 +52,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 
 .top_bar {
@@ -430,6 +431,94 @@ header {
   position: relative;
   top: -130px;
 }
+
+/* Main Footer */
+.footer {
+  background: #2e343d;
+  padding-bottom: 150px;
+}
+
+.footer-wrap {
+  padding-top: 40px;
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo:before {
+  content: ' ';
+  width: 400px;
+  left: 135px;
+  border-bottom: solid 2px #aaa;
+  position: absolute;
+}
+
+.footer-logo:after {
+  content: ' ';
+  width: 400px;
+  right: 135px;
+  border-bottom: solid 2px #aaa;
+  position: absolute;
+}
+
+.social-icons-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-media-icon {
+  height: 35px;
+  width: 35px;
+  background: rgba(255, 255, 255, 0.3) center;
+  border-radius: 20px;
+  background-blend-mode: color;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.twitter-icon {
+  background-image: url("../img/icons/twitter.png");
+}
+
+.facebook-icon {
+  background-image: url("../img/icons/facebook.png");
+}
+
+.youtube-icon {
+  background-image: url("../img/icons/youtube.png");
+}
+
+.instagram-icon {
+  background-image: url("../img/icons/instagram.png");
+}
+
+.linkedin-icon {
+  background-image: url("../img/icons/linkedin2.png");
+}
+
+.tc-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tc-text-head {
+  color: rgb(220, 220, 220);
+  font-weight: bold;
+}
+
+.tc-subtext {
+  margin-top: 10px;
+  color: rgb(200, 200, 200);
+  font-size: 0.8rem;
+}
+
+
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
